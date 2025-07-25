@@ -1,43 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaden Dahan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Jaden Dahan</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Jaden 👋</h2>
+      <p>A dual-degree student in Mechanical Engineering and Economics at UMich, exploring finance, technology, and design.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Edit this to include a short professional bio. You can add a picture, timeline, or values.</p>
+    </div>
+  </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Brooks Financial Group</h3>
+        <p>Wealth Management Intern — May 2025 – Aug 2025</p>
+        <ul>
+          <li>Conducted asset allocation analysis and created comparative performance models.</li>
+          <li>Designed educational modules on annuities and retirement strategy.</li>
+        </ul>
+      </div>
+      <!-- Duplicate this block for more experiences -->
+    </div>
+  </section>
+
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Subsurface Irrigation System</h3>
+        <p>Arduino-based smart garden system using mechanical design, sensors, and water flow control.</p>
+      </div>
+      <!-- Duplicate this block for more projects -->
+    </div>
+  </section>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jadendahan@umich.edu">jadendahan@umich.edu</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jadendahan" target="_blank">@jadendahan</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jaden Dahan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
