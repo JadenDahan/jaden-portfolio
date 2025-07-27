@@ -1,43 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaden Dahan | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Jaden Dahan</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Hi, I'm Jaden 👋</h2>
+      <p>Mechanical Engineering & Economics student at the University of Michigan, passionate about solving complex problems through data, design, and financial strategy.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section id="about" class="about section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m pursuing a B.S.E. in Mechanical Engineering and a B.S. in Economics at the University of Michigan. My experience spans across engineering, finance, and consulting. I thrive at the intersection of technical innovation and strategic decision-making, with a strong foundation in programming, modeling, and cross-functional collaboration.</p>
+      <p>Organizations: Alpha Kappa Psi, UM-Electric Boat, Club Field Hockey, NOBE, SWE, SWEcon</p>
+    </div>
+  </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <h3>Brooks Financial Group</h3>
+        <p>Wealth Management Intern — May 2025 – Aug 2025</p>
+        <ul>
+          <li>Built a C++ portfolio simulation tool applying mean-variance optimization and statistical modeling.</li>
+          <li>Created predictive models using Sharpe ratio, volatility, and tax efficiency to guide investment strategies.</li>
+          <li>Led development of a training module on annuities, retirement contracts, and product comparison.</li>
+          <li>Participated in client portfolio reviews and prepared for the FINRA SIE Exam (Nov 2025).</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Medicom Group</h3>
+        <p>Business Operations Intern — Jun 2024 – Aug 2024</p>
+        <ul>
+          <li>Applied root cause analysis and simulation models to streamline supply chain operations, improving efficiency by 17%.</li>
+          <li>Reduced lead times by 10% by reengineering procurement and scheduling protocols.</li>
+          <li>Audited logistics workflows and implemented standardized KPIs to reduce delivery delays.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>American Countertop Co.</h3>
+        <p>Operations Intern — Jun 2024 – Aug 2024</p>
+        <ul>
+          <li>Built production models in MATLAB and Excel to optimize scheduling and identify inefficiencies.</li>
+          <li>Improved project completion rate by 15% through workflow optimization.</li>
+          <li>Redesigned fabrication layout using CAD (Onshape), boosting throughput by 30%.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="project-item">
+    <h3>Automated Subsurface Garden Irrigation System</h3>
+    <p>Designed and built a large-scale (5×7 ft) subsurface irrigation system combining a pond-tarp-lined basin, mesh soil bed, and a rainwater-fed inlet with overflow control. Integrated a water level sensor and Arduino-controlled solenoid valve to automate overflow management, enhancing efficiency and sustainability. Total material cost under $100.</p>
+    <p>
+      <a href="Automated_Elevated_Subsurface_Irrigation_System.pdf" target="_blank" class="cta-button">View Full Project PDF</a>
+    </p>
+  </div>
+
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:jjdahan@umich.edu">jjdahan@umich.edu</a></p>
+      <p>Phone: <a href="tel:+14439009113">(443) 900-9113</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jaden-dahan" target="_blank">@jaden-dahan</a></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jaden Dahan. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
